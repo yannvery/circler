@@ -3,11 +3,12 @@ defmodule Circler.Mixfile do
 
   def project do
     [
-      app: :circular,
+      app: :circler,
       version: "0.1.0",
       elixir: "~> 1.5",
       description: "CircleCi api wrapper",
       start_permanent: Mix.env == :prod,
+      package: package(),
       deps: deps()
     ]
   end
@@ -30,4 +31,11 @@ defmodule Circler.Mixfile do
     ]
   end
 
+  defp package do
+    [
+      maintainers: [" yannvery "],
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/yannvery/circler"}
+    ]
+  end
 end
