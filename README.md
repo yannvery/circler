@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/yannvery/circler.svg?style=svg)](https://circleci.com/gh/yannvery/circler)
 # Circler
 
 **Elixir Wrapper for the CircleCi Web API**
