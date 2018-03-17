@@ -1,0 +1,38 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Accept": "Application/json; Charset=utf-8"
+      },
+      "method": "get",
+      "options": {
+        "recv_timeout": 10000
+      },
+      "request_body": "",
+      "url": "https://circleci.com/api/v1.1/project/github/codeclimate/test-reporter/560/artifacts?circle-token=4defadf434f2dd041fe0b363fd365e7ff545523d"
+    },
+    "response": {
+      "binary": false,
+      "body": "[ ]",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "text/plain; charset=utf-8",
+        "Date": "Sat, 17 Mar 2018 21:33:23 GMT",
+        "Server": "nginx",
+        "Set-Cookie": "ring-session=vxoA50%2BSOnS7BRg4CVPA4f7Hhcjw7dOzsOCaFFSQLgwMzJZntUxT3LcpH48wN285O8a9kDhtCIRnC87KQ2hCdV0huPDPfMkwKKWaCWBrD27XupcRkA7YPQ5vjR9HH4k7cDRA6BxbRzAfu4SpZ11GxV8%2BhY6YjzcrkbpWnB5QAPsNXYVgPET9PE6sXALUdFbfqLVM0sg7UwYe%2FBsDO10%2Bk8SbzoPMyN8mQLfO4OOH7n8%3D--VEqtehicGdNuYGlDSEkWM04h3Npqn05od%2Ft6HRRNOu8%3D;Path=/;HttpOnly;Expires=Sun, 17 Mar 2019 01:47:11 +0000;Max-Age=1209600;Secure",
+        "Strict-Transport-Security": "max-age=15724800",
+        "X-Circleci-Identity": "i-0856ed7812c339280",
+        "X-Circleci-Scopes": ":view-builds",
+        "X-Client-Trace-Id": "",
+        "X-Frame-Options": "DENY",
+        "X-Request-Id": "67cc1d4b-d434-4b1f-b844-3b6b08aa9d35",
+        "X-Route": "/artifacts",
+        "Content-Length": "3",
+        "Connection": "keep-alive"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

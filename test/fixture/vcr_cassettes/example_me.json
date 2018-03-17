@@ -1,0 +1,37 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Accept": "Application/json; Charset=utf-8"
+      },
+      "method": "get",
+      "options": {
+        "recv_timeout": 10000
+      },
+      "request_body": "",
+      "url": "https://circleci.com/api/v1.1/me?circle-token=4defadf434f2dd041fe0b363fd365e7ff545523d"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\n  \"enrolled_betas\" : [ ],\n  \"in_beta_program\" : false,\n  \"selected_email\" : \"yannvery+circler@gmail.com\",\n  \"avatar_url\" : \"https://avatars2.githubusercontent.com/u/37481079?v=4\",\n  \"trial_end\" : \"2018-03-31T16:30:45.762Z\",\n  \"admin\" : null,\n  \"basic_email_prefs\" : \"smart\",\n  \"sign_in_count\" : 1,\n  \"github_oauth_scopes\" : [ \"user:email\", \"repo\" ],\n  \"analytics_id\" : \"e7f9a378-3d82-47d5-985e-45bda6ad04d1\",\n  \"name\" : null,\n  \"gravatar_id\" : null,\n  \"first_vcs_authorized_client_id\" : \"1521304138124\",\n  \"days_left_in_trial\" : 13,\n  \"parallelism\" : 1,\n  \"student\" : false,\n  \"bitbucket_authorized\" : false,\n  \"github_id\" : 37481079,\n  \"bitbucket\" : null,\n  \"dev_admin\" : false,\n  \"all_emails\" : [ \"yannvery+circler@gmail.com\" ],\n  \"created_at\" : \"2018-03-17T16:30:45.762Z\",\n  \"plan\" : null,\n  \"heroku_api_key\" : null,\n  \"identities\" : {\n    \"github\" : {\n      \"avatar_url\" : \"https://avatars2.githubusercontent.com/u/37481079?v=4\",\n      \"external_id\" : 37481079,\n      \"id\" : 37481079,\n      \"name\" : null,\n      \"user?\" : true,\n      \"domain\" : \"github.com\",\n      \"type\" : \"github\",\n      \"authorized?\" : true,\n      \"provider_id\" : \"bcc68be8-ef10-4dd6-9b76-34f19e0db930\",\n      \"login\" : \"CirclerHex\"\n    }\n  },\n  \"projects\" : { },\n  \"login\" : \"CirclerHex\",\n  \"organization_prefs\" : { },\n  \"containers\" : 1,\n  \"pusher_id\" : \"1e9bcde6bc29c0cc6ea8636bbc2a2f5f15dfba6a\",\n  \"num_projects_followed\" : 0\n}",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "text/plain; charset=utf-8",
+        "Date": "Sat, 17 Mar 2018 16:31:45 GMT",
+        "Server": "nginx",
+        "Set-Cookie": "ring-session=e3H%2FJ7CwkxHH3w5XkjvXSTJx8Pe%2BfLGq2y4k9oG8CcHEnB%2F2hKpha07juZdl9P9cYBN2%2FfA6rzj1%2BGOzVXY2Z%2FmACzhP%2BOzFcrsAflbLxCicwNc9CuTUlyiZMJXQR41zasD60LThT1q%2B9Ft6ZnBRRfC%2FmPOgKlQA2%2BNDWKr6G3hxCS2I4zSqaQQ1vLBIpoCsLHPjKqPLJ2uNLqmIRNkiq1mo8lH4QL8ObiMsuBz9CJ4%3D--Teb5Cx2kHK4HK0M5eCdXBKjQNfTSsEcS3LaeMMbsKfM%3D;Path=/;HttpOnly;Expires=Sun, 17 Mar 2019 01:47:11 +0000;Max-Age=1209600;Secure",
+        "Strict-Transport-Security": "max-age=15724800",
+        "X-Circleci-Identity": "i-0856ed7812c339280",
+        "X-Client-Trace-Id": "",
+        "X-Frame-Options": "DENY",
+        "X-Request-Id": "89d5cdc0-847f-45a9-a38d-b24bfc1f6740",
+        "X-Route": "/me",
+        "Content-Length": "1407",
+        "Connection": "keep-alive"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

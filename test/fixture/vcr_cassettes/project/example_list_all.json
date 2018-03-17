@@ -1,0 +1,37 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Accept": "Application/json; Charset=utf-8"
+      },
+      "method": "get",
+      "options": {
+        "recv_timeout": 10000
+      },
+      "request_body": "",
+      "url": "https://circleci.com/api/v1.1/projects?circle-token=4defadf434f2dd041fe0b363fd365e7ff545523d"
+    },
+    "response": {
+      "binary": false,
+      "body": "[ {\n  \"irc_server\" : null,\n  \"ssh_keys\" : [ ],\n  \"branches\" : {\n    \"master\" : {\n      \"running_builds\" : [ ],\n      \"recent_builds\" : [ {\n        \"outcome\" : \"failed\",\n        \"status\" : \"failed\",\n        \"build_num\" : 1,\n        \"vcs_revision\" : \"b16d92d7ff5f7b46bec2daf60006b05235ac0f21\",\n        \"pushed_at\" : \"2018-03-17T18:57:29.672Z\",\n        \"added_at\" : \"2018-03-17T19:00:54.589Z\"\n      } ],\n      \"last_non_success\" : {\n        \"outcome\" : \"failed\",\n        \"status\" : \"failed\",\n        \"build_num\" : 1,\n        \"vcs_revision\" : \"b16d92d7ff5f7b46bec2daf60006b05235ac0f21\",\n        \"pushed_at\" : \"2018-03-17T18:57:29.672Z\",\n        \"added_at\" : \"2018-03-17T19:00:54.589Z\"\n      }\n    }\n  },\n  \"irc_keyword\" : null,\n  \"oss\" : true,\n  \"slack_channel\" : null,\n  \"hipchat_notify_prefs\" : null,\n  \"reponame\" : \"test-reporter\",\n  \"dependencies\" : \"\",\n  \"aws\" : {\n    \"keypair\" : null\n  },\n  \"slack_webhook_url\" : null,\n  \"irc_channel\" : null,\n  \"parallel\" : 1,\n  \"campfire_subdomain\" : null,\n  \"slack_integration_access_token\" : null,\n  \"username\" : \"CirclerHex\",\n  \"campfire_notify_prefs\" : null,\n  \"slack_integration_team\" : null,\n  \"slack_integration_channel\" : null,\n  \"hipchat_notify\" : null,\n  \"heroku_deploy_user\" : null,\n  \"irc_username\" : null,\n  \"slack_notify_prefs\" : null,\n  \"scopes\" : [ \"write-settings\", \"view-builds\", \"read-settings\", \"trigger-builds\", \"all\", \"status\", \"none\" ],\n  \"campfire_room\" : null,\n  \"hipchat_api_token\" : null,\n  \"campfire_token\" : null,\n  \"slack_subdomain\" : null,\n  \"has_usable_key\" : true,\n  \"setup\" : \"\",\n  \"vcs_type\" : \"github\",\n  \"feature_flags\" : {\n    \"trusty-beta\" : true,\n    \"osx\" : false,\n    \"set-github-status\" : true,\n    \"build-prs-only\" : false,\n    \"forks-receive-secret-env-vars\" : false,\n    \"fleet\" : null,\n    \"build-fork-prs\" : false,\n    \"autocancel-builds\" : false,\n    \"oss\" : true\n  },\n  \"irc_password\" : null,\n  \"compile\" : \"\",\n  \"slack_integration_notify_prefs\" : null,\n  \"slack_integration_webhook_url\" : null,\n  \"irc_notify_prefs\" : null,\n  \"slack_integration_team_id\" : null,\n  \"extra\" : \"\",\n  \"jira\" : null,\n  \"slack_integration_channel_id\" : null,\n  \"language\" : \"Go\",\n  \"hipchat_room\" : null,\n  \"flowdock_api_token\" : null,\n  \"slack_channel_override\" : null,\n  \"vcs_url\" : \"https://github.com/CirclerHex/test-reporter\",\n  \"following\" : true,\n  \"default_branch\" : \"master\",\n  \"slack_api_token\" : null,\n  \"test\" : \"\"\n} ]",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "text/plain; charset=utf-8",
+        "Date": "Sat, 17 Mar 2018 19:02:52 GMT",
+        "Server": "nginx",
+        "Set-Cookie": "ring-session=vIdG7oVU9ZW2k8uTyGqYItMZJncZFShnsctjyQ0FQyvmAqcxrfDOIwggsG%2B2AxqOlc5LsyGBposDVD1J6SLzSPJBWzptdX0bZ9Jqqk1RKnjm9KLE9yhxhssEwHnj0kuskwKiPvVBcvjoo%2Bm316Ph%2BJ9xp7nLUOyLGCWMm5UQgJWigsMC6lWVRJV%2BMZiwuCG51%2BPO5XGxR0bUmKgbVhIqEm3YM5JkGFrrdQrBEKuFFvI%3D--AesCQKXsjq4exK8EgdJ7%2BiaAxfbuR5OOI3X1FSRmzzo%3D;Path=/;HttpOnly;Expires=Sun, 17 Mar 2019 01:24:41 +0000;Max-Age=1209600;Secure",
+        "Strict-Transport-Security": "max-age=15724800",
+        "X-Circleci-Identity": "i-02132e0129f5e1978",
+        "X-Client-Trace-Id": "",
+        "X-Frame-Options": "DENY",
+        "X-Request-Id": "72b6d112-6af4-4918-9ccd-57ff0817b086",
+        "X-Route": "/projects",
+        "Content-Length": "2396",
+        "Connection": "keep-alive"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

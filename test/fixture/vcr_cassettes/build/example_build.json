@@ -1,0 +1,37 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Accept": "Application/json; Charset=utf-8"
+      },
+      "method": "get",
+      "options": {
+        "recv_timeout": 10000
+      },
+      "request_body": "",
+      "url": "https://circleci.com/api/v1.1/recent-builds?circle-token=4defadf434f2dd041fe0b363fd365e7ff545523d"
+    },
+    "response": {
+      "binary": false,
+      "body": "[ {\n  \"compare\" : null,\n  \"previous_successful_build\" : null,\n  \"build_parameters\" : null,\n  \"oss\" : true,\n  \"all_commit_details_truncated\" : false,\n  \"committer_date\" : \"2018-03-08T18:28:32Z\",\n  \"body\" : \"\",\n  \"usage_queued_at\" : \"2018-03-17T18:57:29.816Z\",\n  \"fail_reason\" : null,\n  \"retry_of\" : null,\n  \"reponame\" : \"test-reporter\",\n  \"ssh_users\" : [ ],\n  \"build_url\" : \"https://circleci.com/gh/CirclerHex/test-reporter/1\",\n  \"parallel\" : 1,\n  \"failed\" : true,\n  \"branch\" : \"master\",\n  \"username\" : \"CirclerHex\",\n  \"author_date\" : \"2018-03-08T18:28:32Z\",\n  \"why\" : \"first-build\",\n  \"user\" : {\n    \"is_user\" : true,\n    \"login\" : \"CirclerHex\",\n    \"avatar_url\" : \"https://avatars2.githubusercontent.com/u/37481079?v=4\",\n    \"name\" : null,\n    \"vcs_type\" : \"github\",\n    \"id\" : 37481079\n  },\n  \"vcs_revision\" : \"b16d92d7ff5f7b46bec2daf60006b05235ac0f21\",\n  \"vcs_tag\" : null,\n  \"build_num\" : 1,\n  \"infrastructure_fail\" : false,\n  \"committer_email\" : \"noreply@github.com\",\n  \"previous\" : null,\n  \"status\" : \"failed\",\n  \"committer_name\" : \"GitHub\",\n  \"retries\" : null,\n  \"subject\" : \"Update php_examples.md (#315)\",\n  \"vcs_type\" : \"github\",\n  \"timedout\" : false,\n  \"dont_build\" : null,\n  \"lifecycle\" : \"finished\",\n  \"no_dependency_cache\" : false,\n  \"stop_time\" : \"2018-03-17T19:00:54.574Z\",\n  \"ssh_disabled\" : false,\n  \"build_time_millis\" : 204685,\n  \"picard\" : null,\n  \"circle_yml\" : {\n    \"string\" : \"machine:\\n  environment:\\n    # Avoid --rm on CI\\n    DOCKER_RUN: \\\"docker run\\\"\\n  services:\\n    - docker\\n\\ndependencies:\\n  override:\\n    - pip install awscli\\n\\ntest:\\n  override:\\n    - make test-docker\\n\\ndeployment:\\n  s3:\\n    branch: master\\n    commands:\\n      - make build-all VERSION=head\\n      - make publish-head\\n\\nnotify:\\n  webhooks:\\n    - url: https://cc-slack-proxy.herokuapp.com/circle\\n\"\n  },\n  \"messages\" : [ ],\n  \"is_first_green_build\" : false,\n  \"job_name\" : null,\n  \"start_time\" : \"2018-03-17T18:57:29.889Z\",\n  \"canceler\" : null,\n  \"all_commit_details\" : [ {\n    \"committer_date\" : \"2018-03-08T18:28:32Z\",\n    \"body\" : \"\",\n    \"author_date\" : \"2018-03-08T18:28:32Z\",\n    \"committer_email\" : \"noreply@github.com\",\n    \"commit\" : \"b16d92d7ff5f7b46bec2daf60006b05235ac0f21\",\n    \"committer_login\" : \"web-flow\",\n    \"committer_name\" : \"GitHub\",\n    \"subject\" : \"Update php_examples.md (#315)\",\n    \"commit_url\" : \"https://github.com/CirclerHex/test-reporter/commit/b16d92d7ff5f7b46bec2daf60006b05235ac0f21\",\n    \"author_login\" : \"davehenton\",\n    \"author_name\" : \"Dave Henton\",\n    \"author_email\" : \"dave@codeclimate.com\"\n  } ],\n  \"platform\" : \"1.0\",\n  \"outcome\" : \"failed\",\n  \"vcs_url\" : \"https://github.com/CirclerHex/test-reporter\",\n  \"author_name\" : \"Dave Henton\",\n  \"node\" : [ {\n    \"public_ip_addr\" : \"18.221.42.105\",\n    \"port\" : 64609,\n    \"username\" : \"ubuntu\",\n    \"image_id\" : \"s3://lxc-images-us-east-2/build-image-ubuntu-14.04-XXL-1325-0ccc9ce.tar.gz\",\n    \"ssh_enabled\" : null\n  } ],\n  \"queued_at\" : \"2018-03-17T18:57:29.843Z\",\n  \"canceled\" : false,\n  \"author_email\" : \"dave@codeclimate.com\"\n} ]",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "text/plain; charset=utf-8",
+        "Date": "Sat, 17 Mar 2018 21:33:42 GMT",
+        "Server": "nginx",
+        "Set-Cookie": "ring-session=O7dOBDHdl%2BZliP1rJyJ%2FXwtwpJUdTP6olqI3wtQ1TGxetiyELjbyXw1l7VHGtpICdjVfcbXkfMcJANb%2F6hhvxV8NvdQehxRYIidCl56FxRrqlcwtyvxijBidQ1w3dWVIzYl4TJv6f7x3jN%2F%2B6KXUPD8S3GKtQWQwcsmwVyf4QdCFSmG9tzNyEHSV7IeIaApUHIa9%2B6ZNlC0vuDNjIvZ7bmAESNYrjT%2BN6zKigXIwHYg%3D--VWUahuWS8ES%2Fbz%2B6reYiECTooJhtgG%2BdIojysJhESWM%3D;Path=/;HttpOnly;Expires=Sun, 17 Mar 2019 03:12:30 +0000;Max-Age=1209600;Secure",
+        "Strict-Transport-Security": "max-age=15724800",
+        "X-Circleci-Identity": "i-07c0ba3bc26ad7619",
+        "X-Client-Trace-Id": "",
+        "X-Frame-Options": "DENY",
+        "X-Request-Id": "ee5efa01-91c5-4d4b-a3e9-387ba92cb977",
+        "X-Route": "/recent-builds",
+        "Content-Length": "3036",
+        "Connection": "keep-alive"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
