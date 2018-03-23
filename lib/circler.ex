@@ -10,10 +10,8 @@ defmodule Circler do
 
   More info at: https://circleci.com/docs/api/v1-reference/#summary
   """
-  @spec me(Client.t) :: {:atom, any()}
-  def me(client) do
-    get("me", client)
-  end
+  @spec me(Client.t()) :: no_return()
+  def me(client), do: get("me", client)
 
   @doc """
   Send get HHTP request to CircleCi api.
@@ -24,11 +22,14 @@ defmodule Circler do
 
   More info at: https://circleci.com/docs/api/v1-reference/#summary
   """
-  @spec get(String.t, Client.t) :: {:atom, any()}
+  @spec get(String.t(), Client.t()) :: no_return()
   def get(path, client) do
     url = client |> url(path)
-    headers =   ["Accept": "Application/json; Charset=utf-8"]
-    HTTPoison.get(url, headers, [recv_timeout: 10000]) |> handle_response
+    headers = [Accept: "Application/json; Charset=utf-8"]
+
+    :get
+    |> HTTPoison.request(url, "", headers, [])
+    |> handle_response
   end
 
   defp url(client, path) do
@@ -44,6 +45,6 @@ defmodule Circler do
   end
 
   defp handle_response(response) do
-    IO.inspect response
+    IO.inspect(response)
   end
 end

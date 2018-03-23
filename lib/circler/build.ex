@@ -14,7 +14,7 @@ defmodule Circler.Build do
 
   More info at: https://circleci.com/docs/api/v1-reference/#summary
   """
-  @spec recent_builds(Client.t) :: {:atom, any()}
+  @spec recent_builds(Client.t()) :: no_return()
   def recent_builds(client) do
     Circler.get("recent-builds", client)
   end
@@ -29,9 +29,13 @@ defmodule Circler.Build do
 
   More info at: https://circleci.com/docs/api/v1-reference/#summary
   """
-  @spec by_num(Client.t, Project.t, String.t) :: {:atom, any()}
+  @spec by_num(Client.t(), Project.t(), String.t()) :: no_return()
   def by_num(client, project, build_num) do
-    Circler.get("project/" <> project.type <> "/" <> project.username <> "/" <> project.name <> "/" <> build_num, client)
+    Circler.get(
+      "project/" <>
+        project.type <> "/" <> project.username <> "/" <> project.name <> "/" <> build_num,
+      client
+    )
   end
 
   @doc """
@@ -44,8 +48,13 @@ defmodule Circler.Build do
 
   More info at: https://circleci.com/docs/api/v1-reference/#summary
   """
-  @spec artifacts(Client.t, Project.t, String.t) :: {:atom, any()}
+  @spec artifacts(Client.t(), Project.t(), String.t()) :: no_return()
   def artifacts(client, project, build_num) do
-    Circler.get("project/" <> project.type <> "/" <> project.username <> "/" <> project.name <> "/" <> build_num <> "/artifacts", client)
+    Circler.get(
+      "project/" <>
+        project.type <>
+        "/" <> project.username <> "/" <> project.name <> "/" <> build_num <> "/artifacts",
+      client
+    )
   end
 end

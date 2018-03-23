@@ -6,7 +6,7 @@ defmodule Circler.Project do
 
   defstruct type: nil, username: nil, name: nil
 
-  @type t :: %__MODULE__{type: String.t, username: String.t, name: String.t}
+  @type t :: %__MODULE__{type: String.t(), username: String.t(), name: String.t()}
 
   @doc """
   Create a Project struct with type, username and project name.
@@ -16,11 +16,10 @@ defmodule Circler.Project do
 
   More info at: https://circleci.com/docs/api/v1-reference/#summary
   """
-  @spec new(String.t, String.t, String.t) :: t
+  @spec new(String.t(), String.t(), String.t()) :: t
   def new(type, username, name) do
     %__MODULE__{type: type, username: username, name: name}
   end
-
 
   @doc """
   List of all the projects you're following on CircleCI, with build information organized by branch.
@@ -31,7 +30,7 @@ defmodule Circler.Project do
 
   More info at: https://circleci.com/docs/api/v1-reference/#summary
   """
-  @spec list_all(Client.t) :: {:atom, any()}
+  @spec list_all(Client.t()) :: no_return()
   def list_all(client) do
     Circler.get("projects", client)
   end
@@ -46,8 +45,11 @@ defmodule Circler.Project do
 
   More info at: https://circleci.com/docs/api/v1-reference/#summary
   """
-  @spec project(Client.t, t) :: {:atom, any()}
+  @spec project(Client.t(), t) :: no_return()
   def project(client, project) do
-    Circler.get("project/" <> project.type <> "/" <> project.username <> "/" <> project.name, client)
+    Circler.get(
+      "project/" <> project.type <> "/" <> project.username <> "/" <> project.name,
+      client
+    )
   end
 end
